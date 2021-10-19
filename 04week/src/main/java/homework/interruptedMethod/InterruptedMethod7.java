@@ -19,7 +19,7 @@ public class InterruptedMethod7 {
         if(futureTask.get()){
             System.out.println(Thread.currentThread().getName()+"获取返回值，退出主线程");
         }
-        System.out.println("启动另一个线程，由另一个线程终止主线程，主线程抢占到时间片会执行一部分代码");
+        System.out.println("启动另一个线程，由另一个线程终止主线程，主线程抢占到时间片会执行一部分代码 ");
     }
 }
 
