@@ -4,17 +4,17 @@ import java.sql.*;
 
 public class JdbcTest {
     public static void main(String[] args) {
-        String userName = "";
-        String password = "";
-        String url = "";
+        String userName = "root";
+        String password = "111111";
+        String url = "jdbc:mysql://localhost:3306/test";
         String driverClass = "com.mysql.cj.jdbc.Driver";
-        String sql = "";
+        String sql = "select * from user";
         Connection connection = null;
         PreparedStatement preparedStatement=null;
         ResultSet resultSet = null;
         try {
             //加载驱动注册到DriverManger
-            Class.forName(driverClass);
+           // Class.forName(driverClass);
             connection = DriverManager.getConnection(url, userName, password);
             preparedStatement = connection.prepareStatement(sql);
             resultSet = preparedStatement.executeQuery(sql);
@@ -22,8 +22,6 @@ public class JdbcTest {
                 String name = resultSet.getString("name");
                 Integer age = resultSet.getInt(2);
             }
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }finally {
