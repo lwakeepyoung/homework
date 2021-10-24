@@ -1,4 +1,4 @@
-package com.lwa.jdbc;
+package com.lwa.jdbc.demo;
 
 import java.sql.*;
 
@@ -6,7 +6,7 @@ public class JdbcTest {
     public static void main(String[] args) {
         String userName = "root";
         String password = "111111";
-        String url = "jdbc:mysql://localhost:3306/test";
+        String url = "jdbc:mysql://localhost:3306/mysql";
         String driverClass = "com.mysql.cj.jdbc.Driver";
         String sql = "select * from user";
         Connection connection = null;
