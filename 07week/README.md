@@ -22,7 +22,7 @@ Windows电脑
 使用
 spring版本是2.1.5  
 sharding-jdbc-spring-boot-starter版本是3.1.0  
-使用新版本的spring boot(2.5.5) sharding-jdbc-spring-boot-starter失效。
+使用新版本的spring boot(2.5.5) sharding-jdbc-spring-boot-starter(4.1.1)失效。
 1. 请问下，在哪能找到相关文档，查看具体对应版本?
 2. 官网上的shardingsphere-jdbc-core文档中只有两个配置类，是否有具体的文档和demo?
 
