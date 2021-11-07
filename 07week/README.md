@@ -1,4 +1,4 @@
-### 05week作业说明
+### 07week作业说明
 
 [必做1](https://github.com/lwakeepyoung/homework/tree/main/07week/07week/src/main/java/com/lwa/week/batchinsert)
 
