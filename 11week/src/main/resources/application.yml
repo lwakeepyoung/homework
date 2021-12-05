@@ -1,0 +1,7 @@
+server:
+  port: 8080
+
+spring:
+  redis:
+    url: localhost:6379
+    clientType: JEDIS
